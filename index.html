@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor - Premium Food Delivery</title>
+    <meta name="description" content="Delicious food delivered fast. Experience premium dining at home.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo nav-btn"><i class="fas fa-utensils"></i> Savor.</a>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-btn">Home</a></li>
+                    <li><a href="#categories" class="nav-btn">Menu</a></li>
+                    <li><a href="#offers" class="nav-btn">Offers</a></li>
+                    <li>
+                        <a href="#cart" id="cart-nav-link" class="cart-link">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span id="cart-badge" class="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="home-view">
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Delicious Food<br>Delivered Fast</h1>
+                    <p>Experience the best culinary delights from the comfort of your home.</p>
+                    <a href="#menu" class="btn btn-primary nav-btn">Order Now</a>
+                </div>
+            </section>
+
+            <section id="categories" class="categories-section">
+                <div class="container">
+                    <h2 class="section-title">Featured Categories</h2>
+                    <div class="categories-grid">
+                        <div class="category-card" data-category="Pizza">
+                            <i class="fas fa-pizza-slice"></i>
+                            <h3>Pizza</h3>
+                        </div>
+                        <div class="category-card" data-category="Burgers">
+                            <i class="fas fa-hamburger"></i>
+                            <h3>Burgers</h3>
+                        </div>
+                        <div class="category-card" data-category="Indian">
+                            <i class="fas fa-pepper-hot"></i>
+                            <h3>Indian</h3>
+                        </div>
+                        <div class="category-card" data-category="Desserts">
+                            <i class="fas fa-ice-cream"></i>
+                            <h3>Desserts</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="menu" class="menu-section">
+                <div class="container">
+                    <div class="menu-header"
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem;">
+                        <h2 class="section-title" id="menu-title" style="margin-bottom: 0;">Popular Items</h2>
+                        <button id="show-all-btn" class="btn btn-primary"
+                            style="display: none; padding: 0.5rem 1.2rem; font-size: 0.9rem;">Show All</button>
+                    </div>
+                    <div class="menu-grid">
+                        <!-- Cards will be injected by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="offers" class="promo-section">
+                <div class="container promo-content">
+                    <h2>Special Offer</h2>
+                    <p>Get 20% off on your first order! Use code: <strong>SAVOR20</strong></p>
+                    <a href="#menu" class="btn btn-primary nav-btn">Claim Offer</a>
+                </div>
+            </section>
+        </div> <!-- End of home view -->
+
+        <!-- Cart View -->
+        <div id="cart-view" style="display: none;">
+            <section class="cart-section container" style="padding: 5rem 5%; min-height: 70vh;">
+                <h2 class="section-title">Your Cart</h2>
+                <div class="cart-container">
+                    <div class="cart-items" id="cart-items-container">
+                        <!-- Cart items injected here -->
+                    </div>
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="cart-subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Delivery</span>
+                            <span id="cart-delivery">$0.00</span>
+                        </div>
+                        <hr style="margin: 1rem 0; border: none; border-top: 1px solid rgba(73, 18, 15, 0.1);">
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <span id="cart-total">$0.00</span>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;"
+                            onclick="checkout()">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3><i class="fas fa-utensils"></i> Savor.</h3>
+                <p>Bringing premium dining to your doorstep with love and passion.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>Email: hello@savor.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Savor Delivery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
