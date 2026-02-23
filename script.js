@@ -1,16 +1,31 @@
 const menuItems = [
-    { id: 1, name: "Margherita Pizza", category: "Pizza", price: 14.99, rating: 4.8, image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" },
-    { id: 2, name: "Pepperoni Feast", category: "Pizza", price: 17.99, rating: 4.8, image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80" },
-    { id: 3, name: "BBQ Chicken Pizza", category: "Pizza", price: 18.99, rating: 4.7, image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" },
-    { id: 4, name: "Classic Cheeseburger", category: "Burgers", price: 9.99, rating: 4.7, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" },
-    { id: 5, name: "Double Bacon Burger", category: "Burgers", price: 12.99, rating: 4.9, image: "https://images.unsplash.com/photo-1594212586048-fbceffbeaf69?w=600&q=80" },
-    { id: 6, name: "Spicy Veggie Burger", category: "Burgers", price: 10.99, rating: 4.6, image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=600&q=80" },
-    { id: 7, name: "Chicken Tikka Masala", category: "Indian", price: 16.99, rating: 4.9, image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" },
-    { id: 8, name: "Tandoori Naan & Curry", category: "Indian", price: 12.99, rating: 4.5, image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&q=80" },
-    { id: 9, name: "Paneer Butter Masala", category: "Indian", price: 14.99, rating: 4.8, image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80" },
-    { id: 10, name: "Chocolate Lava Cake", category: "Desserts", price: 7.99, rating: 4.6, image: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80" },
-    { id: 11, name: "Strawberry Cheesecake", category: "Desserts", price: 8.99, rating: 4.7, image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&q=80" },
-    { id: 12, name: "Tiramisu", category: "Desserts", price: 9.99, rating: 4.9, image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80" }
+    // Pizzas
+    { id: 1, name: "Margherita Pizza", category: "Pizza", price: 250, rating: 4.8, image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80" },
+    { id: 2, name: "Pepperoni Feast Pizza", category: "Pizza", price: 450, rating: 4.8, image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80" },
+    { id: 3, name: "BBQ Chicken Pizza", category: "Pizza", price: 500, rating: 4.7, image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=80" },
+    { id: 13, name: "Veggie Supreme Pizza", category: "Pizza", price: 350, rating: 4.6, image: "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?w=600&q=80" },
+    { id: 14, name: "Paneer Tikka Pizza", category: "Pizza", price: 399, rating: 4.9, image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" },
+
+    // Burgers
+    { id: 4, name: "Classic Aloo Tikki Burger", category: "Burgers", price: 80, rating: 4.5, image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" },
+    { id: 5, name: "Cheese Burger", category: "Burgers", price: 150, rating: 4.7, image: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&q=80" },
+    { id: 6, name: "Double Chicken Burger", category: "Burgers", price: 250, rating: 4.9, image: "https://images.unsplash.com/photo-1594212586048-fbceffbeaf69?w=600&q=80" },
+    { id: 15, name: "Paneer Maharaja Burger", category: "Burgers", price: 199, rating: 4.8, image: "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" },
+    { id: 16, name: "Spicy Veggie Burger", category: "Burgers", price: 120, rating: 4.6, image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=600&q=80" },
+
+    // Indian
+    { id: 7, name: "Chicken Biryani", category: "Indian", price: 280, rating: 4.9, image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" },
+    { id: 8, name: "Tandoori Naan & Butter Chicken", category: "Indian", price: 350, rating: 4.8, image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&q=80" },
+    { id: 9, name: "Paneer Butter Masala", category: "Indian", price: 260, rating: 4.8, image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80" },
+    { id: 17, name: "Masala Dosa", category: "Indian", price: 120, rating: 4.7, image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&q=80" },
+    { id: 18, name: "Chole Bhature", category: "Indian", price: 150, rating: 4.9, image: "https://images.unsplash.com/photo-1626779475143-a6042afbd7cc?w=600&q=80" },
+
+    // Desserts
+    { id: 10, name: "Gulab Jamun (2 pcs)", category: "Desserts", price: 60, rating: 4.8, image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" },
+    { id: 11, name: "Rasmalai", category: "Desserts", price: 120, rating: 4.9, image: "https://images.unsplash.com/photo-1624300629298-e9ad39c5952f?w=600&q=80" },
+    { id: 12, name: "Chocolate Lava Cake", category: "Desserts", price: 149, rating: 4.7, image: "https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=600&q=80" },
+    { id: 19, name: "Strawberry Cheesecake", category: "Desserts", price: 220, rating: 4.7, image: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&q=80" },
+    { id: 20, name: "Tiramisu", category: "Desserts", price: 250, rating: 4.9, image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80" }
 ];
 
 const menuGrid = document.querySelector('.menu-grid');
@@ -29,7 +44,7 @@ function renderMenu(items) {
                 </div>
                 <p class="category-tag">${item.category}</p>
                 <div class="card-footer">
-                    <span class="price">$${item.price.toFixed(2)}</span>
+                    <span class="price">₹${item.price}</span>
                     <button class="btn btn-add" onclick="addToCart(${item.id})">Add to Cart</button>
                 </div>
             </div>
@@ -52,9 +67,9 @@ function renderCart() {
 
     if (cart.length === 0) {
         cartContainer.innerHTML = '<p style="text-align:center; padding: 2rem;">Your cart is empty.</p>';
-        subtotalEl.textContent = '$0.00';
-        deliveryEl.textContent = '$0.00';
-        totalEl.textContent = '$0.00';
+        subtotalEl.textContent = '₹0.00';
+        deliveryEl.textContent = '₹0.00';
+        totalEl.textContent = '₹0.00';
         return;
     }
 
@@ -63,7 +78,7 @@ function renderCart() {
             <img src="${item.image}" alt="${item.name}">
             <div class="cart-item-info">
                 <h4>${item.name}</h4>
-                <p class="price">$${item.price.toFixed(2)}</p>
+                <p class="price">₹${item.price}</p>
             </div>
             <div class="cart-item-actions">
                 <button onclick="changeQuantity(${index}, -1)">-</button>
@@ -74,12 +89,12 @@ function renderCart() {
     `).join('');
 
     const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-    const delivery = 5.00;
+    const delivery = 50; // Flat ₹50 delivery charge
     const total = subtotal + delivery;
 
-    subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-    deliveryEl.textContent = `$${delivery.toFixed(2)}`;
-    totalEl.textContent = `$${total.toFixed(2)}`;
+    subtotalEl.textContent = `₹${subtotal}`;
+    deliveryEl.textContent = `₹${delivery}`;
+    totalEl.textContent = `₹${total}`;
 }
 
 function changeQuantity(index, amount) {
@@ -103,7 +118,7 @@ function addToCart(id) {
         }
         renderCart();
 
-        // Show subtle feedback instead of alert
+
         const btn = event.target;
         const originalText = btn.textContent;
         btn.textContent = 'Added!';
@@ -120,16 +135,16 @@ function checkout() {
         alert('Your cart is empty!');
         return;
     }
-    alert('Thank you for your order! This is a demo.');
+    alert('Thank you for your order!');
     cart = [];
     renderCart();
-    // Go back to home view
+
     const homeBtn = document.querySelector('.nav-btn');
     if (homeBtn) homeBtn.click();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Render the initial menu
+
     renderMenu(menuItems);
     renderCart();
 
@@ -142,15 +157,15 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             const category = card.getAttribute('data-category');
 
-            // Filter items
+
             const filteredItems = menuItems.filter(item => item.category === category);
             renderMenu(filteredItems);
 
-            // Update UI
+
             if (menuTitle) menuTitle.textContent = `${category} Menu`;
             if (showAllBtn) showAllBtn.style.display = 'inline-block';
 
-            // Scroll to menu section
+
             const menuSection = document.getElementById('menu');
             if (menuSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight || 80;
@@ -187,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Close menu when clicking a link
+
         const links = navLinks.querySelectorAll('a');
         links.forEach(link => {
             link.addEventListener('click', () => {
@@ -207,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartNavLink = document.getElementById('cart-nav-link');
     const navBtns = document.querySelectorAll('.nav-btn');
 
-    // Show cart view
+
     cartNavLink.addEventListener('click', (e) => {
         e.preventDefault();
         homeView.style.display = 'none';
@@ -215,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    // Show home view
+
     navBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             if (homeView.style.display === 'none') {
@@ -225,16 +240,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth scroll for anchor links
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
 
-            // If it's a home-view targeted link but we are in cart view, 
-            // the view switcher above handles the display toggle, 
-            // we just need to wait a moment to scroll
+
             setTimeout(() => {
                 const targetElement = document.querySelector(targetId);
                 if (targetElement && document.getElementById('home-view').style.display !== 'none') {
